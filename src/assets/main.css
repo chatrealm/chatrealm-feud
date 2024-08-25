@@ -1,0 +1,25 @@
+@import './base.css';
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.flip-enter-active,
+.flip-leave-active {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  perspective: 16em;
+}
+
+.flip-enter-from,
+.flip-leave-to {
+  transform: rotateX(-90deg);
+}
+
